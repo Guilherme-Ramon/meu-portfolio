@@ -1,0 +1,20 @@
+[
+    { "nome": "HTML", "icone": "FaHtml5", "cor": "#E34F26" },
+    { "nome": "CSS", "icone": "FaCss3Alt", "cor": "#1572B6" },
+    { "nome": "JavaScript", "icone": "FaJs", "cor": "#F7DF1E" },
+    { "nome": "Bootstrap", "icone": "FaBootstrap", "cor": "#7952B3" },
+    { "nome": "Tailwind", "icone": "FaCode", "cor": "#38B2AC" },
+    { "nome": "SCSS", "icone": "FaSass", "cor": "#CD6799" },
+    { "nome": "SASS", "icone": "FaSass", "cor": "#CD6799" },
+    { "nome": "Ionic", "icone": "FaMobileAlt", "cor": "#3880FF" },
+    { "nome": "PHP", "icone": "FaPhp", "cor": "#777BB4" },
+    { "nome": "SQL", "icone": "FaDatabase", "cor": "#F29111" },
+    { "nome": "Python", "icone": "FaPython", "cor": "#3776AB" },
+    { "nome": "React", "icone": "FaReact", "cor": "#61DAFB" },
+    { "nome": "JQuery", "icone": "FaJs", "cor": "#0769AD" },
+    { "nome": "GitHub", "icone": "FaGithub", "cor": "#181717" },
+    { "nome": "Git", "icone": "FaGitAlt", "cor": "#F05032" },
+    { "nome": "MVC", "icone": "FaProjectDiagram", "cor": "#28A745" },
+    { "nome": "APIs", "icone": "FaCloud", "cor": "#17A2B8" },
+    { "nome": "WordPress", "icone": "FaWordpress", "cor": "#21759B" }
+]

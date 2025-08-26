@@ -1,0 +1,108 @@
+[
+    {
+        "titulo": {
+            "pt": "Futebol Clube",
+            "es": "Club de Fútbol",
+            "en": "Football Club"
+        },
+        "descricao": {
+            "pt": "Projeto de um clube de futebol com gerenciamento de jogadores.",
+            "es": "Proyecto de un club de fútbol con gestión de jugadores.",
+            "en": "Project of a football club with player management."
+        },
+        "imagemDesktop": "/images/futebol-clube-fc.vercel.app_.png",
+        "imagemMobile": "/images/futebol-clube-fc.vercel.app_mobile.png",
+        "linkLive": "https://futebol-clube-fc.vercel.app/",
+        "linkCode": "https://github.com/Guilherme-Ramon/futebol-clube",
+        "data": "14 de agosto de 2025",
+        "tecnologias": ["HTML", "CSS", "JavaScript", "Bootstrap"]
+    },
+    {
+        "titulo": {
+            "pt": "Unha Perfeita",
+            "es": "Uña Perfecta",
+            "en": "Perfect Nail"
+        },
+        "descricao": {
+            "pt": "Projeto para um estúdio de manicure e pedicure.",
+            "es": "Proyecto para un estudio de manicura y pedicura.",
+            "en": "Project for a manicure and pedicure studio."
+        },
+        "imagemDesktop": "/images/unha-perfeita.vercel.app_.png",
+        "imagemMobile": "/images/unha-perfeita.vercel.app_mobile.png",
+        "linkLive": "https://unha-perfeita.vercel.app/",
+        "linkCode": "https://github.com/Guilherme-Ramon/Unha-Perfeita",
+        "data": "28 de junho de 2025",
+        "tecnologias": ["HTML", "CSS", "JavaScript", "UI", "UX"]
+    },
+    {
+        "titulo": {
+            "pt": "Psicóloga Mariana Silva",
+            "es": "Psicóloga Mariana Silva",
+            "en": "Psychologist Mariana Silva"
+        },
+        "descricao": {
+            "pt": "Projeto para profissional da Dra. Mariana Silva, psicóloga clínica.",
+            "es": "Proyecto para la profesional Dra. Mariana Silva, psicóloga clínica.",
+            "en": "Project for the professional Dr. Mariana Silva, clinical psychologist."
+        },
+        "imagemDesktop": "/images/psicologa-mariana-react.vercel.app_.png",
+        "imagemMobile": "/images/psicologa-mariana-react.vercel.app_mobile.png",
+        "linkLive": "https://psicologa-mariana-react.vercel.app/",
+        "linkCode": "https://github.com/Guilherme-Ramon/psicologa-mariana-react",
+        "data": "17 de junho de 2025",
+        "tecnologias": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "UI",
+            "UX",
+            "React.js",
+            "Font Awesome",
+            "Bootstrap"
+        ]
+    },
+    {
+        "titulo": {
+            "pt": "Lanchonete",
+            "es": "Cafetería",
+            "en": "Snack Bar"
+        },
+        "descricao": {
+            "pt": "Projeto de uma lanchonete com cardápio online.",
+            "es": "Proyecto de una cafetería con menú en línea.",
+            "en": "Project of a snack bar with online menu."
+        },
+        "imagemDesktop": "/images/lanchonete-cyan.vercel.app_.png",
+        "imagemMobile": "/images/lanchonete-cyan.vercel.app_mobile.png",
+        "linkLive": "https://lanchonete-cyan.vercel.app/",
+        "linkCode": "https://github.com/Guilherme-Ramon/lanchonete",
+        "data": "25 de dezembro de 2024",
+        "tecnologias": ["HTML", "CSS", "JavaScript", "Tailwind", "React.js"]
+    },
+    {
+        "titulo": {
+            "pt": "Encurta Links",
+            "es": "Acorta Enlaces",
+            "en": "Link Shortener"
+        },
+        "descricao": {
+            "pt": "Projeto de encurtador de links online.",
+            "es": "Proyecto de acortador de enlaces en línea.",
+            "en": "Online link shortener project."
+        },
+        "imagemDesktop": "/images/encurta-links-seven.vercel.app_.png",
+        "imagemMobile": "/images/encurta-links-seven.vercel.app_mobile.png",
+        "linkLive": "https://encurta-links-seven.vercel.app/",
+        "linkCode": "https://github.com/Guilherme-Ramon/encurta-links",
+        "data": "4 de dezembro de 2024",
+        "tecnologias": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Tailwind",
+            "React.js",
+            "API"
+        ]
+    }
+]

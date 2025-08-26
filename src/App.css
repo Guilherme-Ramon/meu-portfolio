@@ -1,0 +1,52 @@
+.vh-custom {
+    padding-top: 17rem;
+    padding-bottom: 5rem;
+}
+
+@media (max-width: 720px) {
+    .vh-custom {
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 23px;
+}
+
+#mobileMenuButton,
+#closeMobileMenuButton,
+#mobileMenuButton:focus,
+#closeMobileMenuButton:focus,
+#mobileMenuButton:hover,
+#closeMobileMenuButton:hover,
+#mobileMenuButton:active,
+#closeMobileMenuButton:active,
+#mobileMenuButton:focus-visible,
+#closeMobileMenuButton:focus-visible {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    transition: none !important;
+}
+
+#mobileMenuButton .navbar-toggler-icon,
+#closeMobileMenuButton .navbar-toggler-icon {
+    transition: none !important;
+    background-image: none !important;
+}
+
+#mobileMenuButton span,
+#mobileMenuButton span::before,
+#mobileMenuButton span::after,
+#closeMobileMenuButton span,
+#closeMobileMenuButton span::before,
+#closeMobileMenuButton span::after {
+    transition: none !important;
+}
+
+/* App.css */
+.section {
+    min-height: 80vh; /* ou o valor que fizer sentido pra cada seção */
+}
