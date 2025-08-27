@@ -37,5 +37,4 @@
 ---
 
 ## 📊 Estatísticas
-![Meus commits](assets/github-Guilherme-Ramon-contribution.svg)  
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Guilherme-Ramon&show_icons=true&theme=dark)
