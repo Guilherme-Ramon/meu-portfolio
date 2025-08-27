@@ -89,7 +89,6 @@ function Hero({ darkMode }) {
                                         ? "Curriculo-Guilherme-Ramon.pdf"
                                         : undefined
                                 }
-                                target="_blank"
                                 rel="noopener noreferrer"
                                 className={`btn btn-lg w-100 ${
                                     darkMode
