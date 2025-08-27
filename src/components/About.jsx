@@ -8,7 +8,8 @@ function About({ darkMode }) {
 
     const imgRef = useRef(null);
     const titleRef = useRef(null);
-    const textRef = useRef(null);
+    const textRef1 = useRef(null);
+    const textRef2 = useRef(null);
 
     useEffect(() => {
         if (window.innerWidth > 768) {
@@ -30,11 +31,20 @@ function About({ darkMode }) {
                 easing: "ease-in-out",
             });
 
-            ScrollReveal().reveal(textRef.current, {
+            ScrollReveal().reveal(textRef1.current, {
                 origin: "right",
                 distance: "30px",
                 duration: 1000,
                 delay: 600,
+                reset: true,
+                easing: "ease-in-out",
+            });
+
+            ScrollReveal().reveal(textRef2.current, {
+                origin: "right",
+                distance: "30px",
+                duration: 1000,
+                delay: 800,
                 reset: true,
                 easing: "ease-in-out",
             });
@@ -79,8 +89,11 @@ function About({ darkMode }) {
                                 {translations[language].sobreTitulo2}
                             </span>
                         </h2>
-                        <p ref={textRef} className="lead fs-5">
+                        <p ref={textRef1} className="lead fs-5">
                             {translations[language].sobreTexto}
+                        </p>
+                        <p ref={textRef2} className="lead fs-5">
+                            {translations[language].sobreTexto2}
                         </p>
                     </div>
                 </div>

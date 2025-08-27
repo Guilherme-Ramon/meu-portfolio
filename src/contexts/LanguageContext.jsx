@@ -31,8 +31,9 @@ export function LanguageProvider({ children }) {
             sobreTitulo: "Sobre",
             sobreTitulo2: "Mim",
             sobreTexto:
-                "Sou um desenvolvedor front-end com uma paixão por tecnologia desde a infância, oficialmente na área desde 2021. Minha curiosidade e vontade de explorar o mundo do desenvolvimento foram as maiores motivações para me tornar um front-end, e sempre estou em busca de novos desafios e oportunidades de aprendizado.",
+                "Sou desenvolvedor front-end, apaixonado por tecnologia desde a infância e atuando na área oficialmente desde 2021. Atualmente sou estudante de Análise e Desenvolvimento de Sistemas no Gran Centro Universitário, onde aplico na prática conceitos de programação, desenvolvimento web e soluções digitais em projetos acadêmicos e pessoais.",
             sobreAlt: "Ilustração de um programador trabalhando no computador",
+            sobreTexto2: "Curioso e movido por desafios, adoro explorar novas tecnologias e transformar ideias em experiências digitais funcionais e intuitivas. Estou sempre em busca de aprendizado, seja em cursos, projetos da faculdade ou iniciativas próprias, e busco oportunidades para criar projetos que realmente façam a diferença.",
             footerSobre: "Sobre Mim",
             footerSobreTexto:
                 "Sou Guilherme Ramon, desenvolvedor front-end com experiência em diversas tecnologias como HTML, CSS, JavaScript, React e PHP. Transformo ideias em soluções digitais criativas e eficientes.",
@@ -72,7 +73,8 @@ export function LanguageProvider({ children }) {
             sobreTitulo: "Sobre",
             sobreTitulo2: "Mí",
             sobreTexto:
-                "Soy un desarrollador front-end con pasión por la tecnología desde la infancia, oficialmente en el área desde 2021. Mi curiosidad y ganas de explorar el mundo del desarrollo fueron las principales motivaciones para convertirme en front-end, y siempre estoy en busca de nuevos desafíos y oportunidades de aprendizaje.",
+                "Soy desarrollador front-end, apasionado por la tecnología desde la infancia y trabajando oficialmente en el área desde 2021. Actualmente estudio Análisis y Desarrollo de Sistemas en Gran Centro Universitário, donde aplico conceptos de programación, desarrollo web y soluciones digitales en proyectos académicos y personales.",
+                sobreTexto2: "Curioso y motivado por los desafíos, me encanta explorar nuevas tecnologías y transformar ideas en experiencias digitales funcionales e intuitivas. Siempre estoy en búsqueda de oportunidades de aprendizaje, ya sea a través de cursos, proyectos universitarios o iniciativas personales, con el objetivo de crear proyectos que realmente marquen la diferencia.",
             sobreAlt:
                 "Ilustración de un programador trabajando en una computadora",
             footerSobre: "Sobre Mí",
@@ -114,7 +116,9 @@ export function LanguageProvider({ children }) {
             sobreTitulo: "About",
             sobreTitulo2: "Me",
             sobreTexto:
-                "I am a front-end developer with a passion for technology since childhood, officially in the field since 2021. My curiosity and desire to explore the world of development were the main motivations to become a front-end developer, and I am always seeking new challenges and learning opportunities.",
+                "I’m a front-end developer, passionate about technology since childhood, officially working in the field since 2021. I’m currently studying Systems Analysis and Development at Gran Centro Universitário, where I apply programming, web development, and digital solutions concepts in both academic and personal projects.",
+            sobreTexto2:
+                "Curious and driven by challenges, I love exploring new technologies and turning ideas into functional and intuitive digital experiences. I’m always seeking learning opportunities, whether through courses, college projects, or personal initiatives, aiming to create projects that truly make a difference.",
             sobreAlt: "Illustration of a programmer working on a computer",
             footerSobre: "About Me",
             footerSobreTexto:
