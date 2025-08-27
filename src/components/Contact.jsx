@@ -1,8 +1,64 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact({ darkMode }) {
     const { language, translations } = useLanguage();
+    const formRef = useRef();
+    const recaptchaRef = useRef(null);
+    const [btnText, setBtnText] = useState(translations[language].enviarBtn);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const recaptchaValue = recaptchaRef.current.getValue();
+        if (!recaptchaValue) {
+            Swal.fire({
+                icon: "warning",
+                title: "Validação necessária",
+                text: "Por favor, confirme que você não é um robô antes de enviar.",
+                confirmButtonText: "Ok",
+            });
+            return;
+        }
+
+        setBtnText("Enviando...");
+
+        const serviceID = "service_4l1drk7";
+        const templateID = "template_wjpf9o3";
+        const publicKey = "Goip_T2-5oJpycpLi";
+
+        emailjs
+            .sendForm(serviceID, templateID, formRef.current, publicKey)
+            .then(() => {
+                setBtnText("Mensagem Enviada");
+                Swal.fire({
+                    icon: "success",
+                    title: "Mensagem Enviada!",
+                    text: "Sua mensagem foi enviada com sucesso.",
+                    confirmButtonText: "Ok",
+                });
+                formRef.current.reset();
+                recaptchaRef.current.reset();
+                setTimeout(
+                    () => setBtnText(translations[language].enviarBtn),
+                    2000
+                );
+            })
+            .catch((err) => {
+                setBtnText(translations[language].enviarBtn);
+                Swal.fire({
+                    icon: "error",
+                    title: "Erro ao Enviar",
+                    text:
+                        "Houve um erro ao enviar a mensagem: " +
+                        JSON.stringify(err),
+                    confirmButtonText: "Ok",
+                });
+            });
+    };
 
     return (
         <section
@@ -30,8 +86,9 @@ function Contact({ darkMode }) {
                     {translations[language].contatoTexto}
                 </p>
 
-                <form id="form" method="get">
+                <form ref={formRef} id="form" onSubmit={handleSubmit}>
                     <div className="row">
+                        {/* Nome */}
                         <div className="col-md-6 mb-3">
                             <label htmlFor="from_name" className="form-label">
                                 {translations[language].nomeLabel}
@@ -49,6 +106,7 @@ function Contact({ darkMode }) {
                             />
                         </div>
 
+                        {/* E-mail */}
                         <div className="col-md-6 mb-3">
                             <label htmlFor="from_email" className="form-label">
                                 {translations[language].emailLabel}
@@ -66,7 +124,23 @@ function Contact({ darkMode }) {
                             />
                         </div>
 
-                        <div className="col-md-12 mb-3">
+                        {/* Assunto */}
+                        <div className="col-12 mb-3">
+                            <label htmlFor="title" className="form-label">
+                                Assunto
+                            </label>
+                            <input
+                                type="text"
+                                className="form-control"
+                                name="title"
+                                id="title"
+                                placeholder="Digite o assunto da mensagem"
+                                required
+                            />
+                        </div>
+
+                        {/* Mensagem */}
+                        <div className="col-12 mb-3">
                             <label htmlFor="message" className="form-label">
                                 {translations[language].mensagemLabel}
                             </label>
@@ -79,18 +153,30 @@ function Contact({ darkMode }) {
                                 }
                                 rows="4"
                                 required
-                            ></textarea>
+                            />
                         </div>
 
-                        <div className="col-md-12 text-center">
+                        {/* reCAPTCHA */}
+                        <div className="col-12 mb-3">
+                            <ReCAPTCHA
+                                key={darkMode ? "dark" : "light"}
+                                ref={recaptchaRef}
+                                sitekey="6Lf6xLQrAAAAABSTusCPk84pPRH1paJYTeEP5icR"
+                                theme={darkMode ? "dark" : "light"}
+                                style={{ display: "block", width: "100%" }}
+                            />
+                        </div>
+
+                        {/* Botão */}
+                        <div className="col-12 text-center">
                             <button
                                 type="submit"
-                                id="button"
+                                id="btn-entrar-contato"
                                 className={`btn btn-lg mt-3 px-4 py-2 ${
                                     darkMode ? "btn-outline-light" : "btn-dark"
                                 }`}
                             >
-                                {translations[language].enviarBtn}
+                                {btnText}
                             </button>
                         </div>
                     </div>
